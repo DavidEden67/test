@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <link rel="stylesheet"  href="../../css/mobile.css"> <!-- This main css containg the parameters for the phone container should appear on top -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+
+  <title>Swiper demo</title>
+	<style type="text/css">
+.style1 {
+				background-color: #212121;
+}
+</style>
+</head>
+<link rel="stylesheet" href="swiper-bundle.min.css" />
+<script src="swiper-bundle.min.js"></script>
+
+
+
+
+<body class="iframepagesbody" >
+
+
+
+
+  <!-- Swiper -->
+  <div class="swiper" style="left: 0px; top: 0px"/>
+  
+    <div class="swiper-wrapper" >
+    
+               
+            
+ 
+   <div class="swiper-slide myswiper" style="left : 0px; top: 0px"  >    <!-- first swiper-->
+      
+      
+
+            <table class="steptable" style="margin-top: 15px;" cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td style=" color: white; border-bottom: 1px solid #585858;height :35px; text-align:left;   background: transparent;  line-height:21px; padding-left:10px; padding-right:10px;"   >
+										
+											Align the Printhead</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td class="style2" style="color: white; height:50px; text-align:left; padding-top: 5px;  background: #212121;  line-height:15px; padding-left:10px; padding-right:15px; font-size:15px " valign="top"   >
+										
+For b<span class="style1">est possible print quality</span>, align the printhead now.
+
+<p style="margin-top:10px; margin-bottom:5px">This process uses ink and one sheet of paper.</p>
+											
+
+											</td>
+
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd" style="display: block; text-align :right; padding-bottom:20px; padding-top:5px;  line-height:0px; border-top: 1px solid #585858; "  >
+																				
+																						<img hspace="25"  onmousedown=" this.src='continuecta.png'" onmouseup=" this.src='continuebutton.png'"  onclick=" window.setTimeout(function() {swiper.slideNext();}, 13000);   document.getElementById('buttonprogress').click(); swiper.slideNext(); 	"   alt="" src="continuebutton.png" width="70" height="auto" style="cursor:pointer"></td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!--  First swiper, end-->
+      
+      
+      
+      
+      
+      
+     
+
+   <div class="swiper-slide myswiper" style="left: 0px; top: 0px"  >    <!-- second swiper-->
+      
+      
+
+       
+           <table class="steptable" style="margin-left:0px; margin-top:-20px; background: #212121" cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd" style="display: none; letter-spacing:2%; border-bottom: 1px solid #585858;height :40px; text-align:left;   background: transparent ;  font-size:16px; line-height:21px; padding-left:10px; padding-right:10px; "   >
+										
+											Load Paper</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  style="color:white;  height:220px; text-align:center; padding-top: 0px;  background: #212121;  line-height:18px; padding-left:5px; padding-right:15px; "   >
+										
+											Printing alignment page...<br> 
+											<div class="progress-bar" style="margin-left: auto;  margin-right: auto;margin-top:5px; width: 70vw">
+  <span class="bar">
+    <span style="margin-left:-10px;" id="progress" class="progress"></span>
+  </span>
+</div>
+					<input  style="display:none" id="buttonprogress" onclick="document.getElementById('progress').style.animation = 'loader 12s ease forwards'; setTimeout(function(){document.getElementById('progress').style.animation='none' }, 17000);"   name="Button1" type="button" value="button"/>
+
+											
+											
+										</td>
+				
+						</tr>
+						
+
+						
+						
+
+		</table>
+		
+
+      </div> <!--  second swiper, end-->
+ 
+      
+      
+      
+      
+      
+      
+      
+      
+ 
+   <div class="swiper-slide myswiper" style="left: 0px; top: 0px"  >    <!-- Third swiper-->
+      
+      
+
+       
+           <table class="steptable" style="   margin-top:10px " cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td class="style3" style=" padding-left:5px; padding-right:15px;color: white; border-bottom: 1px solid #585858;height :42px; text-align:left;   background: transparent;  line-height:21px;  "   >
+										
+											Scan the Alignment Page</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td class="style2" style="color: white; height:70px; text-align:left; padding: 10px;  background: #212121;  line-height:18px; font-size:15px " valign="top"   >
+										
+									Place the alignment page on the scanner glass as instructed, and touch 'Scan'.</td>
+
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd" style="display: block; height:25px; text-align :right; padding-bottom:10px; padding-top:5px;  line-height:0px; border-top: 1px solid #585858"  >
+																						<img hspace="25" onmousedown=" this.src='scancta.png'" onmouseup=" this.src='scanbutton.png'"  onclick="window.setTimeout(function() {swiper.slideNext();}, 15000); document.getElementById('buttonprogress2').click(); swiper.slideNext(); 	"   alt="" src="scanbutton.png" width="60px" height="auto" style=" cursor:pointer; height: 28px;">
+
+											</td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!--  Third swiper, end-->
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     
+
+   <div class="swiper-slide myswiper" style="left: 0px; top: 0px"  >    <!-- second swiper-->
+      
+      
+
+       
+           <table class="steptable" style="margin-left:0px; margin-top:-20px; background: #212121" cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd" style="display: none; letter-spacing:2%; border-bottom: 1px solid #585858;height :40px; text-align:left;   background: transparent ;  font-size:16px; line-height:21px; padding-left:10px; padding-right:10px; "   >
+										
+											Load Paper</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  style="color:white;  height:220px; text-align:center; padding-top: 0px;  background: #212121;  line-height:18px; padding-left:5px; padding-right:15px; "   >
+										
+											Scanning alignment page...<br> 
+											<div class="progress-bar" style="margin-left: auto;  margin-right: auto; margin-top:5px; width: 70vw">
+  <span class="bar">
+    <span style="margin-left:-10px;" id="progress2" class="progress"></span>
+  </span>
+</div>
+					<input  style="display:none" id="buttonprogress2" onclick="document.getElementById('progress2').style.animation = 'loader 12s ease forwards'; setTimeout(function(){document.getElementById('progress2').style.animation='none' }, 17000);"   name="Button1" type="button" value="button"/>
+
+											
+											
+										</td>
+				
+						</tr>
+						
+
+						
+						
+
+		</table>
+		
+
+      </div> <!--  second swiper, end-->
+ 
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+ 
+   <div class="swiper-slide myswiper" style="left: 0px; top: 0px"  >    <!-- Fifth swiper-->
+      
+      
+
+       
+           <table class="steptable" style=" margin-top:15px " cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td class="style3" style="padding-left:10px;color: white; border-bottom: 1px solid #585858;height :30px; text-align:left;   background: transparent;  line-height:21px;  "   >
+										
+											Alignment Successful</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td class="style2" style=" color: white;  text-align:left; padding: 10px;  background: #212121;   line-height:18px; font-size:15px " valign="top"   >
+										
+The printheads have been aligned successfully!
+
+<p style="margin-top:5px; margin-bottom:5px; color: white">The printer is now calibrated for best print quality.	</p>									
+										</td>
+
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd" style=" height:25px; text-align :right; padding-bottom:10px; padding-top:0px;  line-height:0px; border-top: 1px solid #585858"  >
+																						<img hspace="25" vspace="5" onmousedown=" this.src='okcta.png'" onmouseup=" this.src='okbutton.png'"   onclick="parent.document.getElementById('divhome').click()"   alt="" src="okbutton.png" width="60" height="auto" style="cursor:pointer">
+
+											</td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!--  Fifth swiper, end-->
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+          </div>
+      
+      
+      
+      
+      
+      
+      
+           
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+ 
+       
+
+      
+ 
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+
+
+
+  <!-- Initialize Swiper -->
+  <script >
+    var swiper = new Swiper('.swiper', {
+  
+ 
+             
+        allowTouchMove: false,
+ 
+   
+           speed: 0,
+          grabCursor : false,
+      pagination: {
+
+        el: '.swiper-pagination',
+ 
+        
+        
+        
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        
+         disabledClass: 'disabled_swiper_button'
+      },
+      
+      
+    on: {
+      init: () => {
+        console.log('initialized');
+      },
+      slideChange: s => {
+        // console.log('slideChange', s.activeIndex, s.realIndex);
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      },
+      activeIndexChange: s => {
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      },
+      slideChangeTransitionEnd: s => {
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      } } });
+  </script>
+
+   
+  
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,763 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 195px;
+  background-color: #242424;
+  border: 1px solid #595959;
+  margin-top:0px;
+
+
+}
+
+li a {
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: left;
+  border-bottom: 1px solid #595959;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:first-child {
+  border-top: none;
+}
+
+
+
+li a.active2 {
+  background-color:   gray;
+  color: white;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Language" content="en-us">
+
+<style>
+
+#background{
+display: none;
+}
+</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>  
+//invoke background fadein on page load 
+$(window).ready(function() {      
+  $('#background').fadeIn(5000); 
+    $('#welcome').fadeIn(5000); 
+  //fadeIn rate in milliseconds. 
+  //A higher number = slower fadeIn rate 
+  });  
+</script> 
+
+
+  <link rel="stylesheet" href="mobile.css"> <!-- This main css containg the parameters for the phone container should appear on top -->
+
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+
+
+
+
+
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+</head>
+<link rel="stylesheet" href="swiper-bundle.min.css" />
+<script src="swiper-bundle.min.js"></script>
+<body onload="window.setTimeout(function() {swiper.slideNext();}, 6000);   "   >
+
+
+
+
+
+  <!-- Swiper -->
+  <div class="swiper" style="left: 0px; top: 0px">
+    <div class="swiper-wrapper" >
+    
+               
+            
+            
+            
+            
+            
+      
+      <div class="swiper-slide myswiper"  >    <!-- First swiper, load home animation -->
+      
+      
+
+       
+           <table class="steptable"  onmousemove="" >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd" style="height:150px" onclick="swiper.slideNext()"   >
+										
+										
+											<img id="background" alt="" src="boot.png" width="65" height="auto">
+											<br>
+											<span style="display:none; " id="welcome">Welcome</span>
+											
+											</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd"  >
+											<img alt="" src="wait_progress.gif" width="80%" height="4" style="display: none"></td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!-- First swiper end, load home animation -->
+      
+      
+   
+   
+   
+   
+      
+      <div class="swiper-slide myswiper" >    <!-- second swiper, choose language -->
+      
+      
+
+       
+           <table  class="steptable"  onmousemove="parent.document.getElementById('next0').disabled = false; parent.document.getElementById('next0').style.opacity = 1" >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd"   >
+										
+										
+											Select Language<img onclick="swiper.slideNext()"   style="transform: rotate(180deg); position:absolute; right: 5px; top: 8px" alt="" src="leftarrow.png" width="24" height="auto"></td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd"  >
+										
+										
+										<ul style="height: 122px; overflow: auto">
+  <li style="display: none"><a class="active" href="#home">Home</a></li>
+  <li ><a tabindex="1"  id="english" onclick =" $(this).addClass('active2'); $('#spanish').removeClass('active2');"  onblur =" $(this).removeClass('active2');"  href="#news">
+	English</a>      </li>
+  <li  ><a id="spanish"  onclick =" $(this).addClass('active2'); $('#english').removeClass('active2');"  href="#contact">Espanol</a></li>
+  <li tabindex="2" onfocus="background: blue"><a href="#about">Francias</a></li>
+  <li><a href="#news">Portugues</a></li>
+  <li><a href="#contact">Deutch</a></li>
+  <li><a href="#about">Chinese</a></li>
+  <li><a href="#news">Japanese</a></li>
+  <li><a href="#contact">(more)</a></li>
+  <li><a href="#about">(more)</a></li>
+  <li><a href="#news">(more)</a></li>
+  <li><a href="#contact">(more)</a></li>
+  <li><a href="#about">(more)</a></li>
+</ul>
+
+										
+										
+										
+										
+										
+										
+											<img alt="" src="wait_progress.gif" width="80%" height="4" style="display: none"></td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!-- second swiper end, language-->
+      
+
+
+      
+      
+      
+      
+      
+      
+ 
+      
+      <div class="swiper-slide myswiper" >    <!-- Third swiper, country -->
+      
+      
+
+       
+           <table  class="steptable"  onmousemove="parent.document.getElementById('next0').disabled = false; parent.document.getElementById('next0').style.opacity = 1" >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd" style="height: 37px"   >
+										
+										
+											Country/Region
+											
+											<img id="imgnext" onclick="window.setTimeout(function() {swiper.slideNext();}, 15000); swiper.slideNext();   "   style="transform: rotate(180deg); position:absolute; right: 5px; top: 8px" alt="" src="leftarrow.png" width="24" height="auto">
+											<img onclick="swiper.slidePrev()"   style="position:absolute; left: 5px; top: 8px" alt="" src="leftarrow.png" width="24" height="auto">
+											</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd"  >
+										
+										
+										<ul style="height: 120px; overflow: auto">
+  <li style="display: none"><a class="active" href="#home">Home</a></li>
+  <li ><a tabindex="1"  id="usa" onclick =" $(this).addClass('active2'); $('#australia').removeClass('active2');"  onblur =" $(this).removeClass('active2');"  href="#news">
+	USA</a>      </li>
+  <li  ><a id="australia"  onclick =" $(this).addClass('active2'); $('#usa').removeClass('active2');"  href="#contact">Australia</a></li>
+  <li tabindex="2" onfocus="background: blue"><a href="#about">Austria</a></li>
+  <li><a href="#news">Canada</a></li>
+  <li><a href="#contact">China</a></li>
+  <li><a href="#about">Japan</a></li>
+  <li><a href="#contact">(more)</a></li>
+  <li><a href="#about">(more)</a></li>
+  <li><a href="#news">(more)</a></li>
+  <li><a href="#contact">(more)</a></li>
+  <li><a href="#about">(more)</a></li>
+</ul>
+
+										
+										
+										
+										
+										
+										
+											<img alt="" src="wait_progress.gif" width="80%" height="4" style="display: none"></td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!-- Third swiper end, country-->
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+ 
+      
+      <div class="swiper-slide myswiper" >    <!-- Fourth swiper, firmware update -->
+      
+      
+
+       
+           <table  class="steptable"  onmousemove="parent.document.getElementById('next0').disabled = false; parent.document.getElementById('next0').style.opacity = 1" >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd" style="height: 37px; border-bottom:1px solid gray"   >
+										
+										
+											Firmware
+											</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd" style="padding-top:25px; font-size:12px; "  >
+										
+										
+										Updating firmware, please wait...
+
+										
+										
+										
+										
+										
+										
+											<img alt="" src="wait_progress2.gif" width="80%" style="display: block; margin-left:auto; margin-right:auto; margin-top:10px"></td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!-- fourth swiper end, firmware-->
+
+      
+      
+      
+      
+      
+      
+      
+   
+      
+      <div class="swiper-slide myswiper" >    <!--fifth swiper choose connection-->
+      
+      
+
+       
+           <table  class="steptable"  onmousemove="parent.document.getElementById('next0').disabled = false; parent.document.getElementById('next0').style.opacity = 1" >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd"   >
+										
+										
+											Connection Method<img onclick="swiper.slideNext()"   style="transform: rotate(180deg); position:absolute; right: 5px; top: 8px; " alt="" src="leftarrow.png" width="24" height="auto">&nbsp;&nbsp;											
+											<img id="imgnext" onclick="window.setTimeout(function() {swiper.slideNext();}, 10000); swiper.slideNext();   "   style="transform: rotate(180deg); position:absolute; right: 5px; top: 8px; left: 1651px;" alt="" src="leftarrow.png" width="24" height="auto"></td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd"  >
+										
+										
+										<ul style="height: 122px; overflow: auto">
+  <li style="display: none"><a class="active" href="#home">Home</a></li>
+  <li ><a tabindex="1"  id="wifi" onclick =" $(this).addClass('active2'); $('#ethernet').removeClass('active2');"  onblur =" $(this).removeClass('active2');"  href="#news">
+	Wi-Fi (recommended) </a>      </li>
+  <li  ><a id="ethernet"  onclick =" $(this).addClass('active2'); $('#wifi').removeClass('active2');"  href="#contact">
+	Ethernet</a></li>
+  <li tabindex="2" onfocus="background: blue"><a href="#about">USB (connect later)</a></li>
+</ul>
+
+										
+										
+										
+										
+										
+										
+											<img alt="" src="wait_progress.gif" width="80%" height="4" style="display: none"></td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!-- fifth swiper end, choose connection-->
+
+      
+ 
+      
+      
+      
+      
+      
+      <div class="swiper-slide myswiper" >    <!--six swiper choose network-->
+      
+      
+
+       
+           <table  class="steptable"  onmousemove="parent.document.getElementById('next0').disabled = false; parent.document.getElementById('next0').style.opacity = 1" >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd"   >
+										
+										
+											Choose Network<img onclick="swiper.slideNext()"   style="transform: rotate(180deg); position:absolute; right: 5px; top: 8px; left: 1651px;" alt="" src="leftarrow.png" width="24" height="auto">											<img id="imgnext" onclick=" swiper.slideNext();   "   style="transform: rotate(180deg); position:absolute; right: 5px; top: 8px" alt="" src="leftarrow.png" width="24" height="auto">  <img onclick="swiper.slidePrev()"   style="position:absolute; left: 5px; top: 8px" alt="" src="leftarrow.png" width="24" height="auto"></td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd"  >
+										
+										
+										<ul style="height: 122px; overflow-y: auto; overflow-x: hidden">
+  <li style="display: none"><a class="active" href="#home">Home</a></li>
+  <li  style="position:relative"><a tabindex="1"  id="wifi1" onclick =" $(this).addClass('active2'); $('#wifi2').removeClass('active2');"  onblur =" $(this).removeClass('active2');"  href="#news">
+	Wi-Fi Network (1)&nbsp;&nbsp; <img src="lock.png" style="position: absolute; padding-top:4px;  width: 12px; height: auto; margin-left: 10px" alt="Remove Name">   <img src="wifi.png" style="position: absolute; padding-top:2px;  width: 12px; height: auto; margin-left: 25px" alt="Remove Name"></a>&nbsp;</li>
+  
+  
+   <li style="position:relative"><a tabindex="1"  id="wifi2" onclick =" $(this).addClass('active2'); $('#wifi1').removeClass('active2');"  onblur =" $(this).removeClass('active2');"  href="#news">
+	Wi-Fi Network (2)&nbsp;&nbsp; <img src="lock.png" style="position: absolute; padding-top:4px;  width: 12px; height: auto; margin-left: 10px" alt="Remove Name">   <img src="wifi.png" style="position: absolute; padding-top:2px;  width: 12px; height: auto; margin-left: 25px" alt="Remove Name"></a>&nbsp;</li>
+
+  
+   <li style="position:relative"><a tabindex="1"   onblur =" $(this).removeClass('active2');"  href="#news">
+	Wi-Fi Network (3)&nbsp;&nbsp; <img src="lock.png" style="position: absolute; padding-top:4px;  width: 12px; height: auto; margin-left: 10px" alt="Remove Name">   <img src="wifi.png" style="position: absolute; padding-top:2px;  width: 12px; height: auto; margin-left: 25px" alt="Remove Name"></a>&nbsp;</li>
+
+
+ <li style="position:relative"><a tabindex="4"  onblur =" $(this).removeClass('active2');"  href="#news">
+	Wi-Fi Network (4)&nbsp;&nbsp; 
+<img src="lock.png" style="position: absolute; padding-top:4px;  width: 12px; height: auto; margin-left: 10px" alt="Remove Name">   <img src="wifi.png" style="position: absolute; padding-top:2px;  width: 12px; height: auto; margin-left: 25px" alt="Remove Name"></a>&nbsp;</li>
+
+
+ <li style="position:relative"><a tabindex="5"   onclick =" $(this).addClass('active2'); $('#ethernet').removeClass('active2');"  onblur =" $(this).removeClass('active2');"  href="#news">
+	Wi-Fi Network (5)&nbsp;&nbsp; <img src="lock.png" style="position: absolute; padding-top:4px;  width: 12px; height: auto; margin-left: 10px" alt="Remove Name">   <img src="wifi.png" style="position: absolute; padding-top:2px;  width: 12px; height: auto; margin-left: 25px" alt="Remove Name"></a>&nbsp;</li>
+
+
+ <li style="position:relative"><a tabindex="1"  onclick =" $(this).addClass('active2'); $('#ethernet').removeClass('active2');"  onblur =" $(this).removeClass('active2');"  href="#news">
+	Wi-Fi Network (6)&nbsp;&nbsp; <img src="lock.png" style="position: absolute; padding-top:4px;  width: 12px; height: auto; margin-left: 10px" alt="Remove Name">   <img src="wifi.png" style="position: absolute; padding-top:2px;  width: 12px; height: auto; margin-left: 25px" alt="Remove Name"></a>&nbsp;</li>
+
+  </ul>
+
+										
+										
+										
+										
+										
+										
+											<img alt="" src="wait_progress.gif" width="80%" height="4" style="display: none"></td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!-- six swiper end, choose network-->
+
+      
+      
+      
+      
+      
+      
+                 <div class="swiper-slide myswiper" >  <!-- 7th swiper keyboard-->
+                 
+        
+<table  class="steptable" style="margin-top:-4px" >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd"  style="height:10px; padding-top:10px"  >
+										Wi-Fi Password <img onclick="window.setTimeout(function() {swiper.slideNext();}, 4000); swiper.slideNext()"   style="transform: rotate(180deg); position:absolute; right: 5px; top: 8px; left: 1651px;" alt="" src="leftarrow.png" width="24" height="auto">											<img id="imgnext" onclick="window.setTimeout(function() {swiper.slideNext();}, 4000);  swiper.slideNext();  "   style="transform: rotate(180deg); position:absolute; right: 5px; top: 8px" alt="" src="leftarrow.png" width="24" height="auto">  <img onclick="swiper.slidePrev()"   style="position:absolute; left: 5px; top: 8px" alt="" src="leftarrow.png" width="24" height="auto">
+										
+
+
+</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+<td  class="instructionstd"  >
+
+										
+										
+                 
+    <iframe name="Iframe1"  frameborder="no" src="ios9-keyboard/dist/index.html" style=" overflow: hidden;  margin-top :0px; margin-left:-7px"  width="100%" height="auto">
+				Your browser does not support inline frames or is currently configured not to display inline frames.
+			</iframe>
+
+
+</td>
+				
+</tr>
+						
+
+</table>
+
+ </div>   <!-- 7th swiper, keyboard end-->
+ 
+ 
+ 
+ 
+ 
+ 
+   <div class="swiper-slide myswiper"  >    <!-- 8th swiper, thank you-->
+      
+      
+
+       
+           <table class="steptable"  onmousemove="" >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd" style="height:150px" onclick="swiper.slideNext()"   >
+										
+										
+											<img  alt="" src="boot.png" width="65" height="auto">
+											<br>
+											<span style=" " id="">Printer successfully connected</span>
+												<br>
+											<span style=" " id="">Thank you for choosing HP</span>
+
+											</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd"  >
+											<img alt="" src="wait_progress.gif" width="80%" height="4" style="display: none"></td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!--  8th swiper, thank you end -->
+
+      
+
+      
+ 
+
+
+
+<div class="swiper-slide myswiper" style="background:red"  >    <!-- 9th swiper, control panel-->
+      
+      <img src="controlpanel.png" style="max-width: 100%; height:auto; ">
+		
+
+      </div>     <!-- 9th swiper, control panel end-->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+     </div>  <!-- Swiper wrapper end -->
+          
+    <!-- Add Pagination -->
+  
+    <!-- Add Arrows -->
+  </div>
+
+
+
+  <!-- Initialize Swiper -->
+  <script >
+    var swiper = new Swiper('.swiper', {
+  
+           spaceBetween:30,
+             
+
+ 
+   
+           speed: 0,
+          grabCursor : false,
+      pagination: {
+
+        el: '.swiper-pagination',
+ 
+        
+        
+        
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        
+         disabledClass: 'disabled_swiper_button'
+      },
+      
+      
+    on: {
+      init: () => {
+        console.log('initialized');
+      },
+      slideChange: s => {
+        // console.log('slideChange', s.activeIndex, s.realIndex);
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      },
+      activeIndexChange: s => {
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      },
+      slideChangeTransitionEnd: s => {
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      } } });
+  </script>
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    
+      width:100%;
+
+    }
+
+    body {
+
+
+          font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+
+    }
+
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background- color: #027AAE;
+  opacity: 1;
+}
+
+
+.swiper-slide-active {width:100%!important;}
+
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+    }
+  </style>
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,618 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+
+<script>
+window.addEventListener("wheel", e => e.preventDefault(), { passive:false })
+</script>
+
+
+
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+*:active::-webkit-scrollbar {
+
+
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
+
+
+
+
+
+
+
+
+<style>
+ul {
+
+    background-color: #242424;
+  border: 0px solid #595959;
+
+
+}
+
+li a {
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: left;
+
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:first-child {
+  border-top: none;
+}
+
+
+
+li a.active2 {
+
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Language" content="en-us">
+
+<style>
+
+#background{
+display: none;
+}
+.style1 {
+				color: #FFFFFF;
+}
+</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>  
+//invoke background fadein on page load 
+//$(window).ready(function() {      
+ // $('#background').fadeIn(2000); 
+   // $('#welcome').fadeIn(2000); 
+ // //fadeIn rate in milliseconds. 
+  //A higher number = slower fadeIn rate 
+ // });  
+</script> 
+
+
+  <link rel="stylesheet"  href="../../css/mobile.css"> <!-- This main css containg the parameters for the phone container should appear on top -->
+
+
+
+
+
+
+
+
+
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+</head>
+<link rel="stylesheet" href="swiper-bundle.min.css" />
+<script src="swiper-bundle.min.js"></script>
+<body  class="iframepagesbody"  onload="   "   >
+
+
+
+
+  <!-- Swiper -->
+  <div class="swiper" style="left: 0px; top: 0px">
+    <div class="swiper-wrapper" >
+    
+               
+            
+            
+            
+  
+ 
+  
+
+   <div class="swiper-slide myswiper" style="left: 0px; top: 0px"  >    <!-- first swiper-->
+      
+      
+
+       
+           <table class="steptable" style="margin-top: 12px" cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td class="style3" style=" font-size:13px; border-bottom: 1px solid #585858;height :35px; text-align:left;   background: transparent;  line-height:21px; padding-left:45px;  color: white "   >
+										<img onclick="parent.document.getElementById('divhome').click()  "   style="position:absolute; left: 9px; top: 17px; " alt="" src="leftarrow.png" width="24" height="auto">
+											<nobr>Skip HP Software Setup</nobr></td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td class="style2" style="color: white;font-size : 12px; height:95px; text-align:left; padding-top: 0px;  background: #212121;  line-height:17px; padding-left:5px; padding-right:1px; " valign="top"   >
+<div style="overflow:auto; height:95px; width: 94%; padding-left:5px; padding-right:5px">										
+<p style="margin-top:5px">HP recommends that you use the HP software to connect to the network and finish setting up the printer. Doing so gets you printing quickly—from all of your devices and access to all HP solutions. To continue setting up your printer without HP software, touch “Skip".	</p>																					
+</div>
+											</td>
+
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd" style="display: block; text-align :right; padding-bottom:20px; padding-top:5px;  line-height:0px; border-top: 1px solid #585858"  >
+																						&nbsp;<img hspace="25" onclick="swiper.slideNext(); 	"   alt="" src="skip.png" width="60px" height="auto" style="margin-right: 10px; margin-top: 0px; cursor:pointer">
+
+											</td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!--  First swiper, end-->
+
+         
+            
+            
+            
+            
+            
+            
+   
+
+  
+
+   <div class="swiper-slide myswiper" style="left: 0px; top: 0px"  >    <!-- first swiper-->
+      
+      
+
+       
+           <table class="steptable" style="margin-top:12px; " cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td class="style3" style=" font-size:13px; border-bottom: 1px solid #585858;height :35px; text-align:left;   background: transparent;  line-height:21px; padding-left:40px;  color: white "   >
+										<img onclick=" swiper.slidePrev(); "    style="position:absolute; left: 9px; top: 19px; "alt="" src="leftarrow.png" width="24" height="auto">
+											<nobr>Firmware Update</nobr></td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td class="style2" style="color: white;font-size : 12px; height:95px; text-align:left; padding-top:0px;  background: #212121;  line-height:17px; padding-left:5px; padding-right:1px; " valign="top"   >
+<div style="overflow-y:auto; overflow-x: hidden;  height:95px; width: 91%; padding-left:5px; padding-right:5px">	
+									
+<p style=" margin-top:5px">Firmware updates can improve, enhance, or extend your printer’s functionality and features, protect against security threats, and serve other purposes. HP recommends enabling automatic firmware updates.
+<br>
+<br>
+Please note that this printer uses dynamic security measures to block cartridges 
+using a non-HP chip, and periodic firmware updates will maintain the 
+effectiveness of these measures and block cartridges that previously worked. The 
+printer is intended to work only with new or reused cartridges that have a new 
+or reused HP chip. For more information, go to <span class="style4">
+<a href="http://www.hp.com/learn/ds"><span class="style1">
+www.hp.com/learn/ds</span></a></span><br>
+<br>
+				Your choices are:
+<ul style="width: 150px; margin-top:-10px; margin-left:0px ">
+				<li style =" display: list-item;">Auto Update (Recommended) - Automatically check for and install new updates.</li>
+				<li style =" display: list-item;">Notify - Automatically check for new updates and notify. You can choose if you want to install.</li>
+</ul>
+<p>
+Select “Next” to make your selection.
+</p>
+</div>
+											</td>
+
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd" style="display: block; text-align :right; padding-bottom:20px; padding-top:5px;  line-height:0px; border-top: 1px solid #585858"  >
+																						&nbsp;<img onclick="swiper.slideNext(); 	"   alt="" src="next.png" width="60px" height="auto" style="margin-right: 10px; margin-top: 2px; cursor:pointer">
+
+											</td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!--  First swiper, end-->
+
+         
+            
+
+
+
+
+
+
+         
+            
+ <div class="swiper-slide myswiper" style="left: 0px; top: 0px"  >    <!-- first swiper-->
+      
+      
+
+       
+           <table class="steptable" style="margin-top:15px; " cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td class="style3" style=" font-size:14px; border-bottom: 1px solid #585858;height :35px; text-align:left;   background: transparent;  line-height:21px; padding-left:40px;  color: white "   >
+										<img onclick=" parent.document.getElementById('tablemoderator').style.left= '-100%';  swiper.slidePrev(); "   style="position:absolute; left: 9px; top: 17px; "alt="" src="leftarrow.png" width="24" height="auto"> 
+										Firmware Update</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td class="style2" style="color: white;font-size : 12px; height:85px; text-align:left; padding-top: 5px;  background: #212121;  line-height:17px; padding-left:0px; padding-right:0px; " valign="top"   >
+										
+										<ul style="list-style-type: none ;height : 78px; width: 195px; overflow : hidden; padding-left:10px; margin-right:0px; margin-top:0px; margin-left:1px; ">
+  <li style="display: none"><a class="active" href="#home">Home</a></li>
+  <li  style="position:relative"><a tabindex="1"  id="english" onclick ="    "  onblur =" $(this).removeClass('active2');"  href="javascript:void(0)">
+	<img onclick="document.getElementById('image1').src= 'radioselected.PNG'; document.getElementById('image2').src= 'radio.png';    "  id="image1" style="display:inline-block; margin-left:-15px; margin-right:5px" alt="" src="radioselected.PNG" width="20" height="auto"><span onclick="document.getElementById('image1').src= 'radioselected.PNG'; document.getElementById('image2').src= 'radio.png';    "  style="position: absolute; top: 10px "><nobr>Auto Update (Recommended)</nobr></span></a>         </li>
+  
+  <li  style="position:relative">
+	<a tabindex="1"  id="english" onclick ="   "  onblur =" $(this).removeClass('active2');"  href="javascript:void(0)">
+	<img onclick="document.getElementById('image2').src= 'radioselected.PNG'; document.getElementById('image1').src= 'radio.png';    "  id="image2" style="display:inline-block; margin-left:-15px; margin-right:5px" alt="" src="radio.png" width="20" height="auto"><span onclick="document.getElementById('image2').src= 'radioselected.PNG'; document.getElementById('image1').src= 'radio.png';    "  style="position: absolute; top: 10px ">Notify</span></a>
+	</li>
+  
+  
+
+  </ul>
+
+											</td>
+
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td  class="instructionstd" style="display: block; text-align :right; padding-bottom:20px; padding-top:5px;  line-height:0px; border-top: 1px solid #585858"  >
+																						&nbsp;<img onmousedown=" this.src='savecta.png'" onmouseup=" this.src='save.png'"    onclick="window.setTimeout(function() {swiper.slideNext();}, 4000);   swiper.slideNext(); 	"   alt="" src="save.png" width="71" height="29" style="margin-right: 10px; cursor:pointer">
+
+											</td>
+				
+						</tr>
+						
+
+						
+						
+		</table>
+		
+
+      </div> <!--  First swiper, end-->
+           
+            
+            
+            
+     
+            
+            
+                  
+      
+   
+   
+   
+   
+      
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+ 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+           
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+   <div class="swiper-slide myswiper" style="left: 0px; top: 0px; background: #212121;"  >    <!-- First swiper-->
+      
+      
+
+       
+           <table class="steptable" style="margin-left:1px; " cellspacing="0" cellpadding="0"   >
+
+					
+
+
+
+	<tr>
+						
+										<td class="imagetd" style="display: none; letter-spacing:2%; border-bottom: 1px solid #585858;height :40px; text-align:left;   background: transparent ;  font-size:16px; line-height:21px; padding-left:10px; padding-right:10px; "   >
+										
+											Load Paper</td>
+				
+						</tr>
+						
+
+						
+						
+
+	<tr>
+						
+										<td class="style2" style="color: white; height:190px; text-align:center; padding-top: 0px;   line-height:18px; padding-left:10px; padding-right:10px; "   >
+										<img src="hplogo.png" style="width:60px; height:auto">
+										<br>
+										
+											<span style="font-size:15px">Thank you for choosing HP</span><br> 
+											
+											
+											
+<img style=" margin-left:auto; margin-right:auto; display: none; margin-top:10px; margin-bottom:20px" alt="" src="wait_progress2.gif" width="90%" height="4" >
+											
+											
+										</td>
+				
+						</tr>
+						
+
+						
+						
+
+		</table>
+		
+
+      </div> <!--  second swiper, end-->
+      
+      <div class="swiper-slide myswiper" style="left: 0px; top: 0px"  >    <!-- 9th swiper, control panel-->
+      <div style="height:220px; width:100%; margin-left:1px ; background: #212121;" >
+      
+		<iframe frameborder="0"  width="220px" height="200" style="margin-top:15px; m"  name="I1"  src="clock.htm"scrolling="no" id="I1">
+				Your browser does not support inline frames or is currently configured not to display inline frames.
+			</iframe>
+
+      				</div>
+      
+      </div>     <!-- 9th swiper, control panel end-->
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+ 
+       
+
+      
+ 
+
+      
+      
+      
+      
+      
+      
+      
+      
+
+     </div>  <!-- Swiper wrapper end -->
+          
+    <!-- Add Pagination -->
+  
+    <!-- Add Arrows -->
+  </div>
+
+
+
+  <!-- Initialize Swiper -->
+  <script >
+    var swiper = new Swiper('.swiper', {
+  
+           spaceBetween:30,
+             
+        allowTouchMove: false,
+ 
+   
+           speed: 0,
+          grabCursor : false,
+      pagination: {
+
+        el: '.swiper-pagination',
+ 
+        
+        
+        
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        
+         disabledClass: 'disabled_swiper_button'
+      },
+      
+      
+    on: {
+      init: () => {
+        console.log('initialized');
+      },
+      slideChange: s => {
+        // console.log('slideChange', s.activeIndex, s.realIndex);
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      },
+      activeIndexChange: s => {
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      },
+      slideChangeTransitionEnd: s => {
+        bullet();
+        $("#debug-1").text(`${s.realIndex}`);
+      } } });
+  </script>
+
+  <!-- Demo styles -->
+
+
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+
+</html>
