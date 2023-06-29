@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/d37c5443c6.js" crossorigin="anonymous"></script>
+<style>
+:root {
+  --font: "Montserrat", sans-serif;
+
+  --font-color: #1c1c1c;
+
+  --bg-color: linear-gradient(120deg, #EBECE1  0%, #C0C0C0 100%);
+
+}
+
+/*===== Body =====*/
+
+
+
+.container {
+ 
+  background: linear-gradient(to bottom,    #F5F5F5  95%,  #C0C0C0 100%);
+
+  color: var(--title-color);
+
+  margin: 2rem auto;
+  padding: 3rem;
+
+line-height:100%;
+  border-radius: 2%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+
+  max-width: 80%;
+}
+
+/*===== Header =====*/
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil > img {
+  max-width: 10rem;
+  max-height: 10rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 21px 2px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  margin-left: 1rem;
+  line-height:50%;
+   font-family: 'Montserrat';
+     letter-spacing: 3px;
+  text-shadow: 2px 4px 5px rgba(0,0,0,0.3), 
+    0px -1px 5px rgba(255,255,255,0.3);
+}
+
+.title h1 {
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+
+.title h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.title p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #949494;
+  margin-bottom: 0.3rem;
+}
+
+/*==== texto animado ===== */
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 28em;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+  color: var(--grey);
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 400;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 3s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 28em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/*===== Icons ===== */
+.lista-links {
+  color: var(--title-color);
+}
+
+.link-icon {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  transition: 0.5s;
+  background:#bd93f9;
+  padding-left:5px;
+    padding-right:5px;
+      padding-top:3px;
+    padding-bottom:3px;
+    border-radius:5px;
+
+}
+
+.link-icon:hover {
+  color: white;
+      background:orange;
+}
+
+/*===== Projetos =====*/
+.projetos {
+  margin-top: 1rem;
+
+}
+
+.container-projetos {
+  padding: 1.1rem 1rem;
+  background: var(--bg-projetc);
+  /*  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);*/
+
+  border-radius: 5px;
+  
+  font-size:16px;
+  
+  text-align:justify;
+  
+  line-height:130%;
+}
+
+.container-projetos h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.container-projetos ol {
+  margin-left: 1rem;
+  color: var(--title);
+}
+
+.container-projetos li {
+  font-size: 0.9rem;
+}
+
+.container-projetos a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--title);
+}
+
+.container-projetos a:hover {
+  color: var(#ffb86c);
+}
+
+.container-projetos li:hover {
+  color: var(--purple);
+}
+
+</style>
+
+
+
+
+
+<!--    <meta http-equiv="Refresh" content="0; url='http://davideden.atwebpages.com'" />     -->
+
+<style>
+
+  @keyframes fade-in-down {
+    0% { opacity: 0; transform: translate3d(0, -2.5%, 0); }
+    100% { opacity: 1; transform: none; }
+  }
+</style>
+
+
+<style>
+            @-moz-document url-prefix() { 
+                    li { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                   P { 
+     
+                  font-size: 18px; 
+
+                } 
+                
+                                               h4 { 
+     
+                  font-size: 20px; 
+
+                } 
+  
+ 
+                
+            }
+
+</style>
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Charm&display=swap" rel="stylesheet">
+<script>
+
+//reload window once
+
+//  if(performance.navigation.type == 2){
+//    location.reload(true);
+}
+</script>
+
+
+<script>
+// window.onload = function() {
+ //    if(!window.location.hash) {
+  //       window.location = window.location + '#loaded';
+  //       window.location.reload();
+  //   }
+// }
+</script>
+
+
+<!-- Favorite Icon -->
+<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon.PNG" sizes="16x16" />
+
+
+
+<!-- Style Sheets -->
+<link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/navripple.css">
+
+ 
+ 
+ <!-- disable copy -->
+  <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
+
+ 
+ 
+ 
+ 
+ 
+<!--Scroll Indicator files-->
+       <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="jquery_scrollindicator/jquery.scrollindicatorbullets.css" media="screen">
+      <script src="jquery_scrollindicator/jquery-2.2.0.min.js.download"></script>
+    <script src="jquery_scrollindicator/modernizr.js.download"></script>
+    <script src="jquery_scrollindicator/noframework.waypoints.min.js.download"></script>
+    <script src="jquery_scrollindicator/jquery.scrollindicatorbullets.min.js.download"></script>
+    <script src="jquery_scrollindicator/demo.js.download"></script>
+ 
+ 
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>David Eden Portfolio - Home</title>
+
+
+<style type="text/css">
+.style4 {
+				text-align: center;
+}
+</style>
+
+
+</head>
+
+<body  onresize="setTimeout(function(){document.getElementById('bubble').style.visibility='hidden';}, 0); setTimeout(function(){document.getElementById('bubble').style.visibility='visible';}, 1000);" onload="setTimeout(function(){document.getElementById('bubble').style.visibility='visible';}, 500);">
+
+<div class="top-container" style="left: 0px; top: 0px">
+
+
+
+
+<table id="logotable" align="center">
+					<tr>
+									<td id="logotabletd">&nbsp;
+									
+									  <table  id="logotableinsidetable" >
+													<tr>
+																	<td >
+																	
+<span class="logotext"><nobr>David Eden Portfolio</nobr></span>
+								
+									
+																	</td>
+																	</tr>
+													</table>
+									</td>
+					</tr>
+					<tr>
+									<td id="tduxlogoimage">
+	<table class="tableux" id="tableux">
+					<tr>
+									<td>
+	<img id="imglogoimage" class="imglogoimage"   alt="" src="images/uxw.png" /></td>
+									<td>
+<h3 class="h3custom"  >
+	Design | Visual Design | User Research</h3>
+
+									</td>
+					</tr>
+	</table>
+									</td>
+	
+					</tr>
+	</table>
+
+  
+</div>
+
+<div class="header" id="myHeader">
+
+
+<div>
+
+<div id="scrolltitle">David Eden Portfolio</div>
+
+<table id="navigationtable" align="center" >
+				<tr>
+								<td id="tdnavigationtab">
+								<ol>
+												<li id="newli" class="selected" style=" z-index :6; position:relative"  >About Me</li>
+												<li id="newli2" style="z-index:6; position:relative"  onclick=" setTimeout(function(){window.location.href = 'application.htm';}, 700);" >My Work</li>
+												<li id="bubble" style="visibility: hidden " class="bubble">&nbsp;</li>
+								</ol>
+								
+								
+								
+
+								<table id="tablenavigationlinks"  >
+												<tr>
+																<td>&nbsp;
+																
+<nav role='navigation' style="margin:0px"> <!-- Check ripple class for left margin adjustment of links -->
+  <a  href="javascript:void(0)"     ><span class="ripple"><a class="linkselected"  onclick=" setTimeout(function(){window.location.href = 'index.htm';}, 600);"><nobr>Home</nobr></a></span></a>
+  <a  href="javascript:void(0)"   ><span class="ripple"><a style="cursor:pointer"  onclick=" setTimeout(function(){window.location.href = 'mydesignphilosophy.htm';}, 600);" ><nobr>My Design Thinking</nobr></a></span></a>
+  <a href="javascript:void(0)"   ><span class="ripple"><a  style="cursor:pointer" onclick=" setTimeout(function(){window.location.href = 'myucdcycle.htm';}, 600);"  ><nobr>My UCD Cycle</nobr></a></span></a>
+ 
+</nav>
+<!-- partial -->
+																
+																</td>
+												</tr>
+								</table>
+								
+								
+								
+
+								</td>
+				</tr>
+</table>
+
+</div>
+
+
+</div>
+
+
+
+ <div class="container" style="  animation-name: fade-in-down; animation-duration: 2s;  ">
+    <header class="perfil">
+      <img src="businesscard/pic.JPG" alt="" width="1010" height="1010">
+      <div class="title">
+        <h1>David Eden</h1>
+        <h3>Senior UX Designer</h3>
+        <p></p>
+
+        <!-- Icons -->
+   
+ 
+        <a title="LinkedIn" class="link-icon" target="_blank" href="https://www.linkedin.com/in/david-eden-52799a32/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+       </div>
+    </header>
+
+    <!-- estrutura do projeto -->
+    <main class="projetos">
+      <div class="container-projetos">
+      
+        <p style="font-size:16px; font-weight:600; margin-bottom:-10px" class="line-1 anim-typewriter">Welcome</p>
+        
+        
+        <p>I am a User Experience Designer with over 15 years of experience in interaction design, visual design, and user research. 
+        I have applied my user-centered design methodology and my prototyping skills to designing websites, desktop and web applications, mobile and touch-enabled devices, 
+        and hardware products. My skills have helped bridge the gaps between product owners, software development teams, and the end users by providing design leadership 
+        and forming consensus throughout the product development lifecycle. This has proven to be invaluable in Agile development by promoting Design Thinking to understand 
+        user goals and pain points, and further, by helping software development teams fully understand the intent of product design through high-fidelity prototypes. 
+        I would like to contribute to creating&nbsp;the best products for our 
+		customers who will ultimately decide our success.
+</p>
+        
+        </div>
+
+    </main>
+  </div>
+		
+		
+		
+		
+		
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById('scrolltitle').style.display='block';
+  } else {
+    header.classList.remove("sticky");
+        document.getElementById('scrolltitle').style.display='none';
+  }
+}
+</script>
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  src="javascript/bubble.js"></script>
+
+
+
+<script  src="businesscard/script.js"></script>
+<link rel="stylesheet" href="businesscard/style.css">
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+</body>
+</html>
